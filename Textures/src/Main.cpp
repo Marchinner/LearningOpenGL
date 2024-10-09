@@ -15,6 +15,8 @@ constexpr int SCREEN_WIDTH{ 800 };
 constexpr int SCREEN_HEIGHT{ 600 };
 constexpr const char* SCREEN_TITLE{ "LearnOpenGL" };
 
+float texMix{ 1.0 };
+
 int main()
 {
 	glfwInit();
@@ -129,6 +131,7 @@ int main()
 		shader.setInt("texture1", 0);
 		shader.setInt("texture2", 1);
 		shader.setFloat("xOffset", offset);
+		shader.setFloat("ourMix", texMix);
 		glActiveTexture(GL_TEXTURE0);
 		glBindTexture(GL_TEXTURE_2D, texture[0]);
 		glActiveTexture(GL_TEXTURE1);
@@ -155,4 +158,10 @@ void processInput(GLFWwindow* window)
 	{
 		glfwSetWindowShouldClose(window, true);
 	}
+
+	if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
+		texMix += 0.001;
+
+	if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
+		texMix -= 0.001;
 }
