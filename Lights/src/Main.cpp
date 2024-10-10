@@ -284,8 +284,7 @@ int main()
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		lightShader.use();
-
-		lightPos = glm::vec3(0.0f, sin(glfwGetTime()) * 10.0, 0.0f);
+		lightPos = glm::vec3(1.2f, sin(glfwGetTime()) * 10.0, 2.0f);
 		glm::mat4 model = glm::mat4(1.0f);
 		model = glm::translate(model, lightPos);
 		model = glm::scale(model, glm::vec3(0.2f));
