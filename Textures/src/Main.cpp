@@ -15,7 +15,7 @@ constexpr int SCREEN_WIDTH{ 800 };
 constexpr int SCREEN_HEIGHT{ 600 };
 constexpr const char* SCREEN_TITLE{ "LearnOpenGL" };
 
-float texMix{ 1.0 };
+float texMix{ 0.2 };
 
 int main()
 {
@@ -128,6 +128,7 @@ int main()
 		float offset = sin(time) / 2.0f;
 
 		shader.use();
+
 		shader.setInt("texture1", 0);
 		shader.setInt("texture2", 1);
 		shader.setFloat("xOffset", offset);
@@ -160,8 +161,14 @@ void processInput(GLFWwindow* window)
 	}
 
 	if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
+	{
 		texMix += 0.001;
+		std::cout << "TexMix: " << texMix << std::endl;
+	}
 
 	if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
+	{
 		texMix -= 0.001;
+		std::cout << "TexMix: " << texMix << std::endl;
+	}
 }
