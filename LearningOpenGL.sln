@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{C8347AB3-817
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloWorld", "HelloWorld\HelloWorld.vcxproj", "{871005A9-28ED-4B3E-860D-B8E80A29156F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloTriangle", "HelloTriangle\HelloTriangle.vcxproj", "{B02FC34A-30E5-458C-BC53-7A48C47A314E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -25,6 +27,14 @@ Global
 		{871005A9-28ED-4B3E-860D-B8E80A29156F}.Release|x64.Build.0 = Release|x64
 		{871005A9-28ED-4B3E-860D-B8E80A29156F}.Release|x86.ActiveCfg = Release|Win32
 		{871005A9-28ED-4B3E-860D-B8E80A29156F}.Release|x86.Build.0 = Release|Win32
+		{B02FC34A-30E5-458C-BC53-7A48C47A314E}.Debug|x64.ActiveCfg = Debug|x64
+		{B02FC34A-30E5-458C-BC53-7A48C47A314E}.Debug|x64.Build.0 = Debug|x64
+		{B02FC34A-30E5-458C-BC53-7A48C47A314E}.Debug|x86.ActiveCfg = Debug|Win32
+		{B02FC34A-30E5-458C-BC53-7A48C47A314E}.Debug|x86.Build.0 = Debug|Win32
+		{B02FC34A-30E5-458C-BC53-7A48C47A314E}.Release|x64.ActiveCfg = Release|x64
+		{B02FC34A-30E5-458C-BC53-7A48C47A314E}.Release|x64.Build.0 = Release|x64
+		{B02FC34A-30E5-458C-BC53-7A48C47A314E}.Release|x86.ActiveCfg = Release|Win32
+		{B02FC34A-30E5-458C-BC53-7A48C47A314E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
