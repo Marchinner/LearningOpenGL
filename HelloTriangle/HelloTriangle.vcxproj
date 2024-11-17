@@ -130,8 +130,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\hello_triangle.cpp" />
     <ClCompile Include="src\glad.c" />
+    <ClCompile Include="src\hello_triangle_ebo.cpp" />
     <ClCompile Include="src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\hello_triangle.h" />
+    <ClInclude Include="src\hello_triangle_ebo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
